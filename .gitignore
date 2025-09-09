@@ -11,11 +11,8 @@
 # Test binary, built with `go test -c`
 *.test
 
-# Code coverage profiles and other test artifacts
+# Output of the go coverage tool, specifically when used with LiteIDE
 *.out
-coverage.*
-*.coverprofile
-profile.cov
 
 # Dependency directories (remove the comment below to include it)
 # vendor/
@@ -27,6 +24,72 @@ go.work.sum
 # env file
 .env
 
-# Editor/IDE
-# .idea/
-# .vscode/
+# config.yaml en config/
+/config/config.yaml
+# Archivos de configuración de entorno
+
+# Log file
+*.log
+
+*.zip
+*.tar.gz
+*.rar
+
+HELP.md
+
+### VS Code ###
+.vscode/
+.dccache
+.dccache
+*.code-workspace
+boot.sh
+
+# Archivos binarios compilados
+/bin/
+/dist/
+
+# Air live reload
+/tmp/
+
+# Archivos de configuración local
+config.local.yaml
+*.local.yaml
+*.local.yml
+
+# Archivos de cache golang
+/.cache/
+
+# Directorios de dependencias adicionales
+/.idea/
+/.vscode/
+/.vs/
+
+# Archivos de base de datos locales
+*.db
+*.sqlite
+*.sqlite3
+
+# Archivos de certificados locales
+*.pem
+*.key
+*.crt
+
+# Archivos temporales
+*.tmp
+.DS_Store
+Thumbs.db
+
+# Directorios de frontend compilado (si tienes frontend)
+/public/
+/static/dist/
+
+# Archivos de logs adicionales
+/logs/
+access.log
+error.log
+
+# Archivos de cobertura y pruebas
+/coverage/
+coverage.txt
+profile.out
+
